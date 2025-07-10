@@ -17,9 +17,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Navbar />
-        <main>{children}</main>
+      <body className={`${inter.className} bg-slate-100 text-slate-900`}>
+        <div className="flex min-h-screen flex-col">
+          <Navbar />
+          <main className="flex-grow container mx-auto p-4 sm:p-6 lg:p-8">
+            {children}
+          </main>
+        </div>
       </body>
     </html>
   );

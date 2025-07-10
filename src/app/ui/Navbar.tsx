@@ -2,17 +2,22 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <header className="bg-gray-800 text-white p-4">
-      <nav className="container mx-auto flex gap-4">
-        <Link href="/" className="hover:text-gray-300">
-          Beranda
+    <header className="bg-white shadow-md">
+      <nav className="container mx-auto flex h-16 items-center justify-between p-4 sm:p-6 lg:p-8">
+        <Link
+          href="/"
+          className="text-xl font-bold text-slate-600 hover:text-slate-400"
+        >
+          Personal Blog
         </Link>
-        <Link href="/blog" className="hover:text-gray-300">
-          Blog
-        </Link>
-        <Link href="/about" className="hover:text-gray-300">
-          Tentang Saya
-        </Link>
+        <div className="flex items-center gap-4 text-sm font-medium">
+          <Link href="/blog" className="text-slate-700 hover:text-slate-600">
+            Blog
+          </Link>
+          <Link href="/about" className="text-slate-700 hover:text-slate-600">
+            Tentang
+          </Link>
+        </div>
       </nav>
     </header>
   );

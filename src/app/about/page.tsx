@@ -1,11 +1,11 @@
 export default function AboutPage() {
   return (
-    <main className="p-8">
-      <h1 className="text-3xl font-bold">Tentang Saya</h1>
-      <p className="mt-4">
-        Halo! Saya Andy, saat ini bekerja sebagai Technical Writer yang sedang
-        mendalami dunia web development dengan Next.js
+    <div className="bg-white p-6 rounded-lg shadow-sm">
+      <h1 className="text-3xl font-bold text-slate-800">Tentang Saya</h1>
+      <p className="mt-4 text-slate-600">
+        Halo! Saya Andy, seorang Technical Writer yang sedang mendalami dunia
+        web development dengan Next.js.
       </p>
-    </main>
+    </div>
   );
 }
