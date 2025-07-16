@@ -1,4 +1,5 @@
 import Link from "next/link";
+import LogoBlog from "./logo-blog";
 
 export default function Navbar() {
   return (
@@ -8,7 +9,7 @@ export default function Navbar() {
           href="/"
           className="text-xl font-bold text-slate-600 hover:text-slate-400"
         >
-          Personal Blog
+          <LogoBlog />
         </Link>
         <div className="flex items-center gap-4 text-sm font-medium">
           <Link href="/blog" className="text-slate-700 hover:text-slate-600">
