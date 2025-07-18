@@ -1,6 +1,6 @@
 import { Post } from "./definitions";
 
-export let posts: Post[] = [
+export const posts: Post[] = [
   {
     id: "1",
     title: "Selamat Datang di Blog Saya",
