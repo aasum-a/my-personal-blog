@@ -1,11 +1,6 @@
 import { posts } from "@/lib/data";
 import { NextResponse } from "next/server";
 
-/**
- * Handler untuk mengambil SATU artikel spesifik berdasarkan ID.
- * Method: GET
- * Endpoint: /api/posts/[id]
- */
 export async function GET(
   request: Request,
   { params }: { params: { id: string } }
@@ -18,11 +13,6 @@ export async function GET(
   return NextResponse.json(post);
 }
 
-/**
- * Handler untuk MENGUPDATE artikel spesifik.
- * Method: PATCH (atau PUT)
- * Endpoint: /api/posts/[id]
- */
 export async function PATCH(
   request: Request,
   { params }: { params: { id: string } }
@@ -39,11 +29,6 @@ export async function PATCH(
   return NextResponse.json(post);
 }
 
-/**
- * Handler untuk MENGHAPUS artikel spesifik.
- * Method: DELETE
- * Endpoint: /api/posts/[id]
- */
 export async function DELETE(
   request: Request,
   { params }: { params: { id: string } }
