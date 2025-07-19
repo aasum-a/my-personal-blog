@@ -3,11 +3,13 @@ import EditPostForm from "@/app/ui/posts/edit-form";
 import { notFound } from "next/navigation";
 import { Post } from "@/lib/definitions";
 
-export default async function EditPostPage({
-  params,
-}: {
-  params: { id: string };
-}) {
+type PageProps = {
+  params: {
+    id: string;
+  };
+};
+
+export default async function EditPostPage({ params }: PageProps) {
   const id = params.id;
   const post: Post | undefined = await fetchPostById(id);
 
